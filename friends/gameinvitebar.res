@@ -8,6 +8,7 @@
 				2="fill(x0-9,y0+1,x1,y0+2, lightestOrange)"
 			}
 		}
+
 		Label {
 			textcolor=white
 			font-family=basefont
@@ -16,6 +17,7 @@
 			font-outerglow-offset=1
 			font-outerglow-filtersize=3
 		}
+
 		Button {
 			textcolor=none
 			bgcolor=none
@@ -23,14 +25,16 @@
 				0="image(x0,y0,x1,y1,graphics/chat_bar_close)"
 			}
 		}
-			Button:hover {
-				textcolor=none
-				bgcolor=none
-				render_bg {
-					0="image(x0,y0,x1,y1,graphics/chat_bar_close_hover)"
-				}
+
+		Button:hover {
+			textcolor=none
+			bgcolor=none
+			render_bg {
+				0="image(x0,y0,x1,y1,graphics/chat_bar_close_hover)"
 			}
+		}
 	}
+
 	layout {
 		place {
 			control="InviteImage"
@@ -39,6 +43,7 @@
 			width=30
 			height=36
 		}
+
 		place {
 			control="InviteLabel,GameLabel"
 			margin-left=37
@@ -48,6 +53,7 @@
 			spacing=3
 			width=max
 		}
+
 		place {
 			control="CloseButton"
 			align=right
@@ -56,6 +62,7 @@
 			margin-right=6
 			margin-top=16
 		}
+
 		place {
 			control="ClickHereLabel"
 			width=0

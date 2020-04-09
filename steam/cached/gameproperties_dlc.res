@@ -7,6 +7,7 @@
 			width=max
 			margin-right=23
 		}
+
 		place {
 			control=ContentList
 			start=DescriptionLabel
@@ -14,8 +15,9 @@
 			height=320
 			dir=down
 		}
+
 		place {
-			control=StoreDLCURL
+			control=StowhiteLCURL
 			start=ContentList
 			y=8
 			width=max

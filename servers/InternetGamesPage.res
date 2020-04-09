@@ -18,6 +18,7 @@
 			margin-right=12
 			spacing=8
 		}
+
 		place {
 			control="Filter,FilterString"
 			region="bottom"

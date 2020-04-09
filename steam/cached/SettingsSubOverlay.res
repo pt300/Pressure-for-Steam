@@ -8,6 +8,7 @@
 			dir=down
 			spacing=8
 		}
+
 		place {
 			start=EnableOverlayCheck
 			control=Label1,HotKeySelector
@@ -16,6 +17,7 @@
 			dir=down
 			spacing=8
 		}
+
 		place {
 			control=ScreenshotLabel,ScreenshotHotKeySelector,ScreenshotNotifyCheck,ScreenshotPlaySoundCheck,ScreenshotSaveUncompressedCheck
 			start=HotKeySelector
@@ -25,6 +27,7 @@
 			dir=down
 			spacing=8
 		}
+
 		place {
 			control=SetScreenshotFolderButton
 			start=ScreenshotSaveUncompressedCheck
@@ -32,6 +35,7 @@
 			height=28
 			dir=down
 		}
+
 		place {
 			control=OverlayHomePageLabel,OverlayHomePage
 			start=HotKeySelector
@@ -42,6 +46,7 @@
 			dir=down
 			spacing=8
 		}
+
 		place {
 			control=ScreenshotActionLabel
 			width=0

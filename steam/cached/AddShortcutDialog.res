@@ -3,13 +3,16 @@
 		ListPanelColumnheader {
 			minimum-height=22
 		}
+
 		"ListPanelColumnheader ListPanelCheckBox" {
 			inset="4 6 0 0"
 		}
+
 		ListPanelCheckBox {
 			inset="3 5 0 0"
 		}
 	}
+
 	layout {
 		region {
 			name="bottom"
@@ -17,6 +20,7 @@
 			width=max
 			height=51
 		}
+
 		place {
 			control="Label1"
 			x=16
@@ -24,6 +28,7 @@
 			height=0
 			width=0
 		}
+
 		place {
 			control="AppList"
 			x=1
@@ -33,6 +38,7 @@
 			margin-right=1
 			margin-bottom=51
 		}
+
 		place {
 			control="BrowseButton,AddSelectedButton,CloseButton"
 			region=bottom

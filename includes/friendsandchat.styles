@@ -6,20 +6,23 @@
 			font-weight=400
 			inset="0 0 0 0"
 		}
+
 		CFriendPanel {
 			bgcolor=none
 			textcolor="white"
 			font-family=basefont
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			font-weight=400
 			inset="0 0 0 0"
 		}
+
 		friends_chat_text {
 			selectedtextcolor="trueWhite"
 			SelectedBgColor="blue"
 			textcolor="white"
 		}
+
 		friends_chat_text_self {
 			selectedtextcolor="trueWhite"
 			selectedbgcolor="blue"
@@ -91,6 +94,7 @@ font-size=14 [$LINUX]
 			font-weight=400
 			font-style=none
 		}
+
 		// used in friends tooltip and friends list for overriding regular styles with custom colors
 	 	friends_offline {
 	 		textcolor="lightestGrey"
@@ -111,6 +115,5 @@ font-size=14 [$LINUX]
 	 	friends_ignored {
 	 		textcolor="Friends.IgnoredColor"
 	 	}
-
 	}
 }

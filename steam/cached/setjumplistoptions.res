@@ -6,6 +6,7 @@
 			height=51
 			width=max
 		}
+
 		place {
 			control=Label1
 			x=32
@@ -13,19 +14,22 @@
 			width=max
 			margin-right=32
 		}
+
 		place {
-			control="ShowOnlineStatus,ShowAwayStatus,ShowBusyStatus,ShowAppearOfflineStatus"
-			start="Label1"
+			control="ShowOnlineStatus,ShowAwayStatus,ShowInvisibleStatus,ShowBusyStatus,ShowAppearOfflineStatus"
+			start=Label1
 			y=4
 			dir=down
 			spacing=-4
 		}
+
 		place {
 			control="Label2"
 			start=ShowAppearOfflineStatus
 			y=16
 			dir=down
 		}
+
 		place {
 			controls="ShowStore,ShowMyGames,ShowCommunity,ShowFriendActivity,ShowFriends,ShowMusicPlayer,ShowScreenshots,ShowServers,ShowSettings,ShowBigPicture,ShowVR,ShowExit"
 			start=Label2
@@ -33,6 +37,7 @@
 			dir=down
 			spacing=-4
 		}
+
 		place {
 			control="OkButton,CancelButton"
 			region=bottom
@@ -43,6 +48,7 @@
 			margin-top=12
 			spacing=8
 		}
+
 		place {
 			control="Divider1,Divider2"
 			height=0

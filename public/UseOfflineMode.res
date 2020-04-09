@@ -2,13 +2,12 @@
 	styles {
 		frame {
 			bgcolor=darkestGrey
-
 			render{}
 			render_bg{
-				0="fill( x0, y1-51, x1, y1-50, darkestGrey )"
-				1="fill( x0+1, y1-50, x1-1, y1-49, greyHighlight )"
-				2="gradient( x0+1, y1-49, x1-1, y1-1, grey, lightGreyEnd )"
-				3="image(x0+30, y0+50, x1, y1, graphics/dialogs/noConnection)"
+				0="fill( x0, y1 - 51, x1, y1 - 50, darkestGrey )"
+				1="fill( x0 + 1, y1 - 50, x1 - 1, y1 - 49, greyHighlight )"
+				2="gradient( x0 + 1, y1 - 49, x1 - 1, y1 - 1, grey, lightGreyEnd )"
+				3="image( x0 + 30, y0 + 50, x1, y1, graphics/dialogs/noConnection )"
 			}
 		}
 
@@ -19,9 +18,10 @@
 
 		"URLLabel" {
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 		}
 	}
+
 	layout {
 		place {
 			control="Label1,URLLabel1"
@@ -37,6 +37,7 @@ font-size=14 [$LINUX]
 			width=0
 			height=0
 		}
+
 		region {
 			name=bottom
 			align=bottom

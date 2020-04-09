@@ -8,6 +8,7 @@
 			margin-right=43
 			dir=down
 		}
+
 		place {
 			control="DeviceName"
 			start=Label1
@@ -16,6 +17,7 @@
 			height=24
 			dir=down
 		}
+
 		place {
 			control="ChangeDeviceButton,ReinitAudio"
 			start=DeviceName
@@ -25,6 +27,7 @@
 			dir=down
 			spacing=8
 		}
+
 		place {
 			control="Divider1"
 			start=ReinitAudio
@@ -33,6 +36,7 @@
 			margin-right=43
 			dir=down
 		}
+
 		place {
 			control="SpeakerLabel,SpeakerVolume"
 			start=Divider1
@@ -42,6 +46,7 @@
 			dir=down
 			spacing=8
 		}
+
 		place {
 			control="MicrophoneLabel,MicrophoneVolume"
 			start=Divider1
@@ -50,6 +55,7 @@
 			dir=down
 			spacing=8
 		}
+
 		place {
 			control="TestMicrophone"
 			start=MicrophoneVolume
@@ -58,6 +64,7 @@
 			height=28
 			dir=down
 		}
+
 		place {
 			control="MicMeter"
 			start=TestMicrophone
@@ -65,6 +72,7 @@
 			height=25
 			dir=down
 		}
+
 		place {
 			control="MicMeter2"
 			start=TestMicrophone
@@ -72,6 +80,7 @@
 			height=25
 			dir=down
 		}
+
 		place {
 			control="MicBoost"
 			start=MicMeter
@@ -79,6 +88,7 @@
 			y=-2
 			dir=right
 		}
+
 		place {
 			control="Divider2"
 			start=MicMeter
@@ -87,12 +97,14 @@
 			margin-right=43
 			dir=down
 		}
+
 		place {
 			control="WhenActiveLabel"
 			start=Divider2
 			y=16
 			dir=down
 		}
+
 		place {
 			control="TransmitMethodRadioButton1,TransmitMethodRadioButton2"
 			start=WhenActiveLabel
@@ -100,6 +112,7 @@
 			spacing=-4
 			dir=down
 		}
+
 		place {
 			control="PushToTalkKeyEntry"
 			start=TransmitMethodRadioButton2
@@ -109,6 +122,7 @@
 			height=24
 			dir=down
 		}
+
 		place {
 			control="RepairAudio"
 			width=0

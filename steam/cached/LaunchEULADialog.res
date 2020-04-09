@@ -8,12 +8,14 @@
 			}
 		}
 	}
+
 	layout {
 		region {
 			name="bottom"
 			align=bottom
 			height=51
 		}
+
 		place {
 			control=Label1
 			width=0
@@ -28,6 +30,7 @@
 			dir=down
 			margin-bottom=51
 		}
+
 		place {
 			control=Label2
 			start=HTML

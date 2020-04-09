@@ -11,6 +11,7 @@
 			}
 		}
 	}
+
 	layout {
 		place {
 			control="HTMLSellPage"
@@ -19,11 +20,13 @@
 			margin-top=26
 			margin-bottom=51
 		}
+
 		region {
 			name="bottom"
 			align=bottom
 			height=51
 		}
+
 		place {
 			control="PrevButton,NextButton,CloseButton"
 			region=bottom

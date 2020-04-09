@@ -14,15 +14,14 @@
 		label {
 			textcolor=lightestGrey
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 		}
 
 		textEntry {
 			textcolor=lightestGrey
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			inset-left=0
-
 			render {}
 			render_bg{}
 		}
@@ -47,6 +46,7 @@ font-size=14 [$LINUX]
 			dir=down
 			spacing=0
 		}
+
 		// We seperate the value from the header to avoid a weird width-bug that cuts off text
 		place {
 			control=ServerText
@@ -67,6 +67,7 @@ font-size=14 [$LINUX]
 			margin-left=0
 			margin-top=16
 		}
+
 		// We seperate the value from the header to avoid a weird width-bug that cuts off text
 		place {
 			control=ServerIPText
@@ -77,6 +78,7 @@ font-size=14 [$LINUX]
 			margin-top=-8
 			dir=down
 		}
+
 		// GAME
 		place {
 			control=GameLabel
@@ -87,6 +89,7 @@ font-size=14 [$LINUX]
 			dir=down
 			spacing=0
 		}
+
 		// We seperate the value from the header to avoid a weird width-bug that cuts off text
 		place {
 			control=GameText
@@ -96,6 +99,7 @@ font-size=14 [$LINUX]
 			margin-top=-4
 			dir=down
 		}
+
 		// MAP
 		place {
 			control=MapLabel
@@ -106,6 +110,7 @@ font-size=14 [$LINUX]
 			dir=down
 			spacing=0
 		}
+
 		// We seperate the value from the header to avoid a weird width-bug that cuts off text
 		place {
 			control=MapText
@@ -126,6 +131,7 @@ font-size=14 [$LINUX]
 			dir=down
 			spacing=0
 		}
+
 		// We seperate the value from the header to avoid a weird width-bug that cuts off text
 		place {
 			control=PlayersText
@@ -135,6 +141,7 @@ font-size=14 [$LINUX]
 			margin-top=-4
 			dir=down
 		}
+
 		// VAC
 		place {
 			control=Label1
@@ -145,6 +152,7 @@ font-size=14 [$LINUX]
 			dir=down
 			spacing=0
 		}
+
 		// We seperate the value from the header to avoid a weird width-bug that cuts off text
 		place {
 			control=SecureText
@@ -165,6 +173,7 @@ font-size=14 [$LINUX]
 			dir=down
 			spacing=0
 		}
+
 		// We seperate the value from the header to avoid a weird width-bug that cuts off text
 		place {
 			control=PingText

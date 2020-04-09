@@ -4,23 +4,23 @@
 		// ***********************************************
 		// Fonts
 		// ***********************************************
+		basefont="Roboto"
+		semibold="Roboto"
+		headerfont="Bebas Neue Bold"
 
-		basefont = "Roboto"
-		semibold = "Roboto"
-
-		headerfont = "Bebas Neue Bold"
 		// ***********************************************
 		// Spacing
 		// ***********************************************
 		Frame.ClientInsetX 0
 		Frame.ClientInsetY 35
+
 		// ***********************************************
 		// Transitions
 		// ***********************************************
-		Frame.FocusTransitionEffectTime "0"	 // time it takes for a window to fade in/out on focus/out of focus
-		Frame.TransitionEffectTime "0.25"	  // time it takes for a window to fade in/out on open/close
-		Frame.OnDragAlphaDelayTime "0.15"	  // time it takes after clicking the title bar of a window before the alpha multiplier kicks in
-		Frame.OnDragAlphaMultiplier "1.0"	 // multiplier applied to alpha while dragging a frame
+		Frame.FocusTransitionEffectTime "0"	// time it takes for a window to fade in/out on focus/out of focus
+		Frame.TransitionEffectTime "0.25"	// time it takes for a window to fade in/out on open/close
+		Frame.OnDragAlphaDelayTime "0.15"	// time it takes after clicking the title bar of a window before the alpha multiplier kicks in
+		Frame.OnDragAlphaMultiplier "1.0"	// multiplier applied to alpha while dragging a frame
 		Frame.AutoSnapRange "6"
 		Frame.UsesAlphaBlending 1
 		FrameSystemButton.Icon ""
@@ -35,7 +35,7 @@
 		WizardPanel.HeaderBGColor green
 		Menu.TextInset "6"
 
-		PropertySheet.TransitionEffectTime "0"	 // time to change from one tab to another
+		PropertySheet.TransitionEffectTime "0" // time to change from one tab to another
 		PropertySheet.TabGap -2
 		PropertySheet.FlashTabColor "255 114 76 255"
 

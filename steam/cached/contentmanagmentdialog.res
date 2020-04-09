@@ -6,6 +6,7 @@
 			width=max
 			height=51
 		}
+
 		place {
 			contol="AddFolderButton, RemoveFolderButton"
 			region=bottom
@@ -14,6 +15,7 @@
 			margin-top=12
 			margin-left=12
 		}
+
 		place {
 			control=CloseButton
 			region=bottom

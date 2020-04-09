@@ -8,6 +8,7 @@
 			minimum-width=92
 		}
 	}
+
 	layout {
 		region {
 			name="bottomrow"

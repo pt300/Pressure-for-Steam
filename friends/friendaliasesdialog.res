@@ -5,6 +5,7 @@
 			minimum-height=300
 		}
 	}
+
 	layout {
 		place {
 			control=Caption

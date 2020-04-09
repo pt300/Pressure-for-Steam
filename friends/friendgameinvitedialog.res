@@ -12,7 +12,7 @@
 			bgcolor=none
 		}
 
-		FriendsTitle  {
+		FriendsTitle {
 			inset="0 0 0 0"
 		}
 		FriendsTitle [$OSX] {
@@ -23,15 +23,16 @@
 			font-weight=400
 			inset="0 9 0 0"
 		}
-			FriendsTitle:FrameFocus [$OSX] {
-				bgcolor=none
-				textcolor=white
-				font-family=basefont
-				font-size=15
-font-size=14 [$LINUX]
-				font-weight=400
-				inset="0 9 0 0"
-			}
+
+		FriendsTitle:FrameFocus [$OSX] {
+			bgcolor=none
+			textcolor=white
+			font-family=basefont
+			font-size=15
+			font-size=14 [$LINUX]
+			font-weight=400
+			inset="0 9 0 0"
+		}
 	}
 
  	layout {
@@ -71,5 +72,4 @@ font-size=14 [$LINUX]
 
 		}
  	}
-
 }

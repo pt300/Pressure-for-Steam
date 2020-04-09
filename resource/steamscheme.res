@@ -8,6 +8,7 @@ Scheme {
 			frame_menu {
 				visible	0
 			}
+
 			frame_title {
 				xpos	0
 				ypos	1
@@ -15,6 +16,7 @@ Scheme {
 				tall	28
 				AutoResize	1
 			}
+
 			frame_captiongrip {
 				xpos	2
 				ypos	2
@@ -22,6 +24,7 @@ Scheme {
 				tall	60
 				AutoResize	1
 			}
+
 			frame_minimize {
 				xpos	r84
 				xpos	22 [$OSX]
@@ -32,6 +35,7 @@ Scheme {
 				PinCorner	1
 				PinCorner	0 [$OSX]
 			}
+
 			frame_maximize {
 				xpos	r57
 				xpos	43 [$OSX]
@@ -43,6 +47,7 @@ Scheme {
 				PinCorner	1
 				PinCorner	0 [$OSX]
 			}
+
 			frame_close {
 				xpos	r56//r62
 				xpos	1 [$OSX]
@@ -53,6 +58,7 @@ Scheme {
 				PinCorner	1
 				PinCorner	0 [$OSX]
 			}
+
 			frame_brGrip {
 				xpos	r15
 				ypos	r15
@@ -61,6 +67,7 @@ Scheme {
 				PinCorner	3
 			}
 		}
+
 		PropertyDialog {
 			sheet {
 				xpos	9
@@ -68,6 +75,7 @@ Scheme {
 				wide	r9
 				tall	r48
 			}
+
 			// these buttons are still a bit special - if some of them are hidden, they shuffle
 			// across taking the place of other buttons to make sure there aren't gaps
 			ApplyButton {
@@ -76,12 +84,14 @@ Scheme {
 				wide	92
 				tall	28
 			}
+
 			CancelButton {
 				xpos	r203
 				ypos	r39
 				wide	92
 				tall	28
 			}
+
 			OKButton {
 				xpos	r304
 				ypos	r39
@@ -89,6 +99,7 @@ Scheme {
 				tall	28
 			}
 		}
+
 		WizardPanel {
 			subpanel {
 				xpos	10
@@ -97,6 +108,7 @@ Scheme {
 				tall	r48
 				AutoResize	3
 			}
+
 			PrevButton {
 				xpos	r306
 				ypos	r39
@@ -104,6 +116,7 @@ Scheme {
 				tall	28
 				PinCorner	3
 			}
+
 			NextButton {
 				xpos	r204
 				ypos	r39
@@ -111,6 +124,7 @@ Scheme {
 				tall	28
 				PinCorner	3
 			}
+
 			CancelButton {
 				xpos	r102
 				ypos	r39
@@ -118,6 +132,7 @@ Scheme {
 				tall	28
 				PinCorner	3
 			}
+
 			FinishButton {
 				xpos	r102
 				ypos	r39
@@ -127,6 +142,7 @@ Scheme {
 			}
 		}
 	}
+
 	Fonts {
 		"Default" {
 			"1" {

@@ -8,10 +8,11 @@
 			image="graphics/window_controls/grabber"
 		}
 
-			FrameBRGripPanel:hover {
-				inset="4 4 0 0"
-				image="graphics/window_controls/grabber"
-			}
+		FrameBRGripPanel:hover {
+			inset="4 4 0 0"
+			image="graphics/window_controls/grabber"
+		}
+
 // ********************************************************************************************************
 // Close Button
 // ********************************************************************************************************
@@ -20,29 +21,29 @@
 			image="graphics/window_controls/osx/close"
 		}
 
-			FrameCloseButton:hover {
-				image="graphics/window_controls/osx/close_hover"
-			}
+		FrameCloseButton:hover {
+			image="graphics/window_controls/osx/close_hover"
+		}
 
-			FrameCloseButton:active {
-				image="graphics/window_controls/osx/close_active"
-			}
+		FrameCloseButton:active {
+			image="graphics/window_controls/osx/close_active"
+		}
 
-			FrameCloseButton:disabled {
-				image="graphics/window_controls/osx/disabled"
-			}
+		FrameCloseButton:disabled {
+			image="graphics/window_controls/osx/disabled"
+		}
 
-			FrameCloseButton:framefocus {
-				image="graphics/window_controls/osx/close"
-			}
+		FrameCloseButton:framefocus {
+			image="graphics/window_controls/osx/close"
+		}
 
-				FrameCloseButton:framefocus:hover {
-					image="graphics/window_controls/osx/close_hover"
-				}
+		FrameCloseButton:framefocus:hover {
+			image="graphics/window_controls/osx/close_hover"
+		}
 
-				FrameCloseButton:framefocus:active {
-					image="graphics/window_controls/osx/close_active"
-				}
+		FrameCloseButton:framefocus:active {
+			image="graphics/window_controls/osx/close_active"
+		}
 
 // ********************************************************************************************************
 // Maximize Button
@@ -52,60 +53,60 @@
 			image="graphics/window_controls/osx/maximize"
 		}
 
-			FrameMaximizeButton:hover {
-				image="graphics/window_controls/osx/maximize_hover"
-			}
+		FrameMaximizeButton:hover {
+			image="graphics/window_controls/osx/maximize_hover"
+		}
 
-			FrameMaximizeButton:active {
-				image="graphics/window_controls/osx/maximize_active"
-			}
+		FrameMaximizeButton:active {
+			image="graphics/window_controls/osx/maximize_active"
+		}
 
-			FrameMaximizeButton:disabled {
-				image="graphics/window_controls/osx/disabled"
-			}
+		FrameMaximizeButton:disabled {
+			image="graphics/window_controls/osx/disabled"
+		}
 
-			FrameMaximizeButton:framefocus {
-				image="graphics/window_controls/osx/maximize"
-			}
+		FrameMaximizeButton:framefocus {
+			image="graphics/window_controls/osx/maximize"
+		}
 
-				FrameMaximizeButton:framefocus:hover {
-					image="graphics/window_controls/osx/maximize_hover"
-				}
+		FrameMaximizeButton:framefocus:hover {
+			image="graphics/window_controls/osx/maximize_hover"
+		}
 
-				FrameMaximizeButton:framefocus:active {
-					image="graphics/window_controls/osx/maximize_active"
-				}
+		FrameMaximizeButton:framefocus:active {
+			image="graphics/window_controls/osx/maximize_active"
+		}
+
 // ********************************************************************************************************
 // Minimize Button
 // ********************************************************************************************************
-
 		FrameMinimizeButton {
 			padding-top=3px
 			image="graphics/window_controls/osx/minimize"
 		}
 
-			FrameMinimizeButton:hover {
-				image="graphics/window_controls/osx/minimize_hover"
-			}
+		FrameMinimizeButton:hover {
+			image="graphics/window_controls/osx/minimize_hover"
+		}
 
-			FrameMinimizeButton:active {
-				image="graphics/window_controls/osx/minimize_active"
-			}
+		FrameMinimizeButton:active {
+			image="graphics/window_controls/osx/minimize_active"
+		}
 
-			FrameMinimizeButton:disabled {
-				image="graphics/window_controls/osx/disabled"
-			}
+		FrameMinimizeButton:disabled {
+			image="graphics/window_controls/osx/disabled"
+		}
 
-			FrameMinimizeButton:framefocus {
-				image="graphics/window_controls/osx/minimize"
-			}
+		FrameMinimizeButton:framefocus {
+			image="graphics/window_controls/osx/minimize"
+		}
 
-				FrameMinimizeButton:framefocus:hover {
-					image="graphics/window_controls/osx/minimize_hover"
-				}
+		FrameMinimizeButton:framefocus:hover {
+			image="graphics/window_controls/osx/minimize_hover"
+		}
 
-				FrameMinimizeButton:framefocus:active {
-					image="graphics/window_controls/osx/minimize_active"
-				}
+		FrameMinimizeButton:framefocus:active {
+			image="graphics/window_controls/osx/minimize_active"
+		}
 	}
 }

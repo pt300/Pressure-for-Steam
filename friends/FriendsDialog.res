@@ -2,6 +2,7 @@
 	colors {
 		PropertySheet.TabGap 1
 	}
+
 	styles {
 		// Here we force-set the minimum width to ensure that the search bar is not cut off.
 		CFriendsDialog {
@@ -39,32 +40,33 @@
 				11="fill(x0+1, y0+144, x1-1, y0+230, darkestGrey)" // Single pixel line below the gradient
 				// Background for the pageTabs
 			}
-	    }
-		    FrameTitle:framefocus {
-				bgcolor=none
-				textcolor=none
-				font-family=basefont
-				font-size=1
-				font-weight=400
-				inset="0 4 0 0" [$OSX]
-				render_bg {
-					// Creates the top section
-					0="gradient( x0+1, y0+1, x1-1, y0 + 39, grey, lightGreyEnd )"
-					21="fill( x0+1, y0+39, x1-1, y0 + 75, lightGreyEnd )"
-					1="fill(x0+1, y0+1, x0+2, y0+2, bottomDarkPixels)" // Top Left Dark Pixel
-					2="fill(x1-2, y0+1, x1-1, y0+2, bottomDarkPixels)" // Top Right Dark Pixel
-					3="fill(x0+2, y0+1, x0+3, y0+2, greyHighlightFake)" // Top Left Fake Anti-Aliased
-					4="fill(x0+1, y0+2, x0+2, y0+3, greyHighlightFake)" // Top Left Fake Anti-Aliased
-					5="fill(x1-3, y0+1, x1-2, y0+2, greyHighlightFake)" // Top Right Fake Anti-Aliased
-					6="fill(x1-2, y0+2, x1-1, y0+3, greyHighlightFake)" // Top Right Fake Anti-Aliased
-					// Create the 1px Highlight on top
-					7="fill( x0+3, y0+1, x1-3, y0+2, greyHighlight)"
-					//8="image_scale(x0+1, y0+77, x1-1, y0+155, graphics/subnav_bg)"
-					// 9="fill(x0+1, y0+78, x0+2, y0+115, grey10)"
-					// 10="fill(x1-2, y0+78, x1-1, y0+115, grey10)"
-					11="fill(x0+1, y0+144, x1-1, y0+230, darkestGrey)" // Single pixel line below the gradient
-				}
+		}
+
+		FrameTitle:framefocus {
+			bgcolor=none
+			textcolor=none
+			font-family=basefont
+			font-size=1
+			font-weight=400
+			inset="0 4 0 0" [$OSX]
+			render_bg {
+				// Creates the top section
+				0="gradient( x0+1, y0+1, x1-1, y0 + 39, grey, lightGreyEnd )"
+				21="fill( x0+1, y0+39, x1-1, y0 + 75, lightGreyEnd )"
+				1="fill(x0+1, y0+1, x0+2, y0+2, bottomDarkPixels)" // Top Left Dark Pixel
+				2="fill(x1-2, y0+1, x1-1, y0+2, bottomDarkPixels)" // Top Right Dark Pixel
+				3="fill(x0+2, y0+1, x0+3, y0+2, greyHighlightFake)" // Top Left Fake Anti-Aliased
+				4="fill(x0+1, y0+2, x0+2, y0+3, greyHighlightFake)" // Top Left Fake Anti-Aliased
+				5="fill(x1-3, y0+1, x1-2, y0+2, greyHighlightFake)" // Top Right Fake Anti-Aliased
+				6="fill(x1-2, y0+2, x1-1, y0+3, greyHighlightFake)" // Top Right Fake Anti-Aliased
+				// Create the 1px Highlight on top
+				7="fill( x0+3, y0+1, x1-3, y0+2, greyHighlight)"
+				//8="image_scale(x0+1, y0+77, x1-1, y0+155, graphics/subnav_bg)"
+				// 9="fill(x0+1, y0+78, x0+2, y0+115, grey10)"
+				// 10="fill(x1-2, y0+78, x1-1, y0+115, grey10)"
+				11="fill(x0+1, y0+144, x1-1, y0+230, darkestGrey)" // Single pixel line below the gradient
 			}
+		}
 
 		// Used to push the friends section down lower for trickery with the PageTabs.
 		Page {
@@ -105,29 +107,31 @@
 				8="fill(x1+11, y1-3, x1+12, y1-2, darkGrey)"
 			}
 		}
-			PageTab:hover {
-				textcolor=white
-				render_bg {
-					0="gradient(x0+10, y0+2, x1+12, y1-2, greyHighlight, grey)"
-					1="fill(x0+10, y0+2, x1+12, y0+3, lightestGreyHighlight)"
-					3="fill(x0+10, y0+2, x0+11, y0+3, darkGreyEnd)"
-					4="fill(x1+11, y0+2, x1+12, y0+3, darkGreyEnd)"
-					7="fill(x0+10, y1-3, x0+11, y1-2, darkGrey)"
-					8="fill(x1+11, y1-3, x1+12, y1-2, darkGrey)"
-				}
+
+		PageTab:hover {
+			textcolor=white
+			render_bg {
+				0="gradient(x0+10, y0+2, x1+12, y1-2, greyHighlight, grey)"
+				1="fill(x0+10, y0+2, x1+12, y0+3, lightestGreyHighlight)"
+				3="fill(x0+10, y0+2, x0+11, y0+3, darkGreyEnd)"
+				4="fill(x1+11, y0+2, x1+12, y0+3, darkGreyEnd)"
+				7="fill(x0+10, y1-3, x0+11, y1-2, darkGrey)"
+				8="fill(x1+11, y1-3, x1+12, y1-2, darkGrey)"
 			}
-			PageTab:selected {
-				textcolor=blue
-				render_bg {}
-			}
+		}
+
+		PageTab:selected {
+			textcolor=blue
+			render_bg {}
+		}
 
 		"CFriendsDialog SectionedListPanel" {
-		    bgcolor=none
-		    font-family=basefont
-		    render_bg {}
-	    }
+			bgcolor=none
+			font-family=basefont
+			render_bg {}
+		}
 
-	    CFriendsListSectionHeader {
+		CFriendsListSectionHeader {
 			textcolor=white
 			font-family=semibold
 			font-style="regular,normal"
@@ -137,7 +141,7 @@
 				1="fill(x0-22, y0, x1, y0+1, greyHighlight)"
 				2="gradient(x0-22,y1,x1,y1+1, darkGrey, none)"
 			}
-	    }
+		}
 
 		// The actual whole dialog window itself.
 		FriendsPanel {
@@ -152,7 +156,7 @@
 			}
 		}
 
-		AddFriendsButton  {
+		AddFriendsButton {
 			textcolor="none"
 			font-family=basefont
 			font-size=15
@@ -161,10 +165,11 @@
 			render {}
 			render_bg {}
 		}
-			AddFriendsButton:hover {
-				textcolor="none"
-				render_bg {}
-			}
+
+		AddFriendsButton:hover {
+			textcolor="none"
+			render_bg {}
+		}
 
 		RootMenu {
 			bgcolor="none"
@@ -179,13 +184,14 @@
 			font-size=1
 			font-weight=400
 		}
-			FriendsTitle:FrameFocus [$OSX] {
-				bgcolor="none"
-				textcolor="none"
-				font-family=basefont
-				font-size=1
-				font-weight=400
-			}
+
+		FriendsTitle:FrameFocus [$OSX] {
+			bgcolor="none"
+			textcolor="none"
+			font-family=basefont
+			font-size=1
+			font-weight=400
+		}
 
 		"MenuBar MenuButton" {
 			textcolor=none
@@ -193,18 +199,20 @@
 				0="image( x0, y0, x1,y1, graphics/supermenus/friends/normal )"
 			}
 		}
-			"MenuBar MenuButton:hover" {
-				textcolor=none
-				render_bg {
-					0="image( x0, y0, x1,y1, graphics/supermenus/friends/hover )"
-				}
+
+		"MenuBar MenuButton:hover" {
+			textcolor=none
+			render_bg {
+				0="image( x0, y0, x1,y1, graphics/supermenus/friends/hover )"
 			}
-			"MenuBar MenuButton:selected" {
-				textcolor=none
-				render_bg {
-					0="image( x0, y0, x1,y1, graphics/supermenus/friends/active )"
-				}
+		}
+
+		"MenuBar MenuButton:selected" {
+			textcolor=none
+			render_bg {
+				0="image( x0, y0, x1,y1, graphics/supermenus/friends/active )"
 			}
+		}
 
 		FriendsSearch {
 			textcolor="darkestGrey"
@@ -234,46 +242,22 @@
 				20="fill(x0+187, y0+54, x0+188, y0+55, grey50)" //bottom right highlight
 			}
 		}
-			// Typed in, as well as hovered.
-			FriendsSearch:hover {
-				textcolor="darkGreyEnd"
-				padding-left=4
-			}
-				FriendsSearch:focus {
-					render {
-						0="fill(x0-27,y0+59,x1+9999,y0+60, darkestGrey)"
-					}
-					render_bg {
-						6="fill(x0-27, y0-5, x1+9999, y0+59, lightGreyEnd)"
-						1="image(x0-19, y0, x0+3, y0+25, graphics/search/active/left)"
-						2="image(x1-14, y0, x1-2, y0+25, graphics/search/active/right)"
-						3="image_scale(x0+3, y0, x1-14, y0+25, graphics/search/active/inner)"
 
-						//begin pagetab background
-						15="fill(x0-19,y0+31,x0+187,y0+55, darkestGrey)" //middle, top to bottom
-						16="fill(x0-20,y0+32,x0-19,y0+54, darkestGrey)" //left edge
-						17="fill(x0+187,y0+32,x0+188,y0+54, darkestGrey)" //right edge
-						18="fill(x0-19,y0+55,x0+187,y0+56, grey50)" //bottom highlight
-						19="fill(x0-20, y0+54, x0-19, y0+55, grey50)" //bottom left highlight
-						20="fill(x0+187, y0+54, x0+188, y0+55, grey50)" //bottom right highlight
-					}
+		// Typed in, as well as hovered.
+		FriendsSearch:hover {
+			textcolor="darkGreyEnd"
+			padding-left=4
+		}
+
+		FriendsSearch:focus {
+			render {
+				0="fill(x0-27,y0+59,x1+9999,y0+60, darkestGrey)"
 				}
-			// Default State when nothing in it.
-			FriendsSearch:empty {
-				textcolor="lightestGrey"
-				font-family=basefont
-				font-style=italic
-				padding-left=4
-
-				render {
-					0="fill(x0-27,y0+59,x1+9999,y0+60, darkestGrey)"
-				}
-
 				render_bg {
 					6="fill(x0-27, y0-5, x1+9999, y0+59, lightGreyEnd)"
-					1="image(x0-19, y0, x0+3, y0+25, graphics/search/left)"
-					2="image(x1-14, y0, x1-2, y0+25, graphics/search/right)"
-					3="image_scale(x0+3, y0, x1-14, y0+25, graphics/search/inner)"
+					1="image(x0-19, y0, x0+3, y0+25, graphics/search/active/left)"
+					2="image(x1-14, y0, x1-2, y0+25, graphics/search/active/right)"
+					3="image_scale(x0+3, y0, x1-14, y0+25, graphics/search/active/inner)"
 
 					//begin pagetab background
 					15="fill(x0-19,y0+31,x0+187,y0+55, darkestGrey)" //middle, top to bottom
@@ -284,55 +268,84 @@
 					20="fill(x0+187, y0+54, x0+188, y0+55, grey50)" //bottom right highlight
 				}
 			}
-				FriendsSearch:empty:focus {
-					render {
-						0="fill(x0-27,y0+59,x1+9999,y0+60, darkestGrey)"
-					}
-					render_bg {
-						6="fill(x0-27, y0-5, x1+9999, y0+59, lightGreyEnd)"
-						1="image(x0-19, y0, x0+3, y0+25, graphics/search/active/left)"
-						2="image(x1-14, y0, x1-2, y0+25, graphics/search/active/right)"
-						3="image_scale(x0+3, y0, x1-14, y0+25, graphics/search/active/inner)"
 
-						//begin pagetab background
-						15="fill(x0-19,y0+31,x0+187,y0+55, darkestGrey)" //middle, top to bottom
-						16="fill(x0-20,y0+32,x0-19,y0+54, darkestGrey)" //left edge
-						17="fill(x0+187,y0+32,x0+188,y0+54, darkestGrey)" //right edge
-						18="fill(x0-19,y0+55,x0+187,y0+56, grey50)" //bottom highlight
-						19="fill(x0-20, y0+54, x0-19, y0+55, grey50)" //bottom left highlight
-						20="fill(x0+187, y0+54, x0+188, y0+55, grey50)" //bottom right highlight
-					}
-				}
-				FriendsSearch:empty:active {
-					render {
-						0="fill(x0-27,y0+59,x1+9999,y0+60, darkestGrey)"
-					}
-					render_bg {
-						6="fill(x0-27, y0-5, x1+9999, y0+59, lightGreyEnd)"
-						1="image(x0-19, y0, x0+3, y0+25, graphics/search/active/left)"
-						2="image(x1-14, y0, x1-2, y0+25, graphics/search/active/right)"
-						3="image_scale(x0+3, y0, x1-14, y0+25, graphics/search/active/inner)"
-
-						//begin pagetab background
-						15="fill(x0-19,y0+31,x0+187,y0+55, darkestGrey)" //middle, top to bottom
-						16="fill(x0-20,y0+32,x0-19,y0+54, darkestGrey)" //left edge
-						17="fill(x0+187,y0+32,x0+188,y0+54, darkestGrey)" //right edge
-						18="fill(x0-19,y0+55,x0+187,y0+56, grey50)" //bottom highlight
-						19="fill(x0-20, y0+54, x0-19, y0+55, grey50)" //bottom left highlight
-						20="fill(x0+187, y0+54, x0+188, y0+55, grey50)" //bottom right highlight
-					}
-				}
-				FriendsSearch:empty:hover {
-					textcolor="lightGreyEnd"
-					font-style=italic
-					padding-left=4
-				}
-			FriendsSearch:disabled {
-				textcolor="None"
-				font-family=basefont
-				font-style=italic
-				padding-left=4
+		// Default State when nothing in it.
+		FriendsSearch:empty {
+			textcolor="lightestGrey"
+			font-family=basefont
+			font-style=italic
+			padding-left=4
+			render {
+				0="fill(x0-27,y0+59,x1+9999,y0+60, darkestGrey)"
 			}
+			render_bg {
+				6="fill(x0-27, y0-5, x1+9999, y0+59, lightGreyEnd)"
+				1="image(x0-19, y0, x0+3, y0+25, graphics/search/left)"
+				2="image(x1-14, y0, x1-2, y0+25, graphics/search/right)"
+				3="image_scale(x0+3, y0, x1-14, y0+25, graphics/search/inner)"
+
+				//begin pagetab background
+				15="fill(x0-19,y0+31,x0+187,y0+55, darkestGrey)" //middle, top to bottom
+				16="fill(x0-20,y0+32,x0-19,y0+54, darkestGrey)" //left edge
+				17="fill(x0+187,y0+32,x0+188,y0+54, darkestGrey)" //right edge
+				18="fill(x0-19,y0+55,x0+187,y0+56, grey50)" //bottom highlight
+				19="fill(x0-20, y0+54, x0-19, y0+55, grey50)" //bottom left highlight
+				20="fill(x0+187, y0+54, x0+188, y0+55, grey50)" //bottom right highlight
+			}
+		}
+
+		FriendsSearch:empty:focus {
+			render {
+				0="fill(x0-27,y0+59,x1+9999,y0+60, darkestGrey)"
+			}
+			render_bg {
+				6="fill(x0-27, y0-5, x1+9999, y0+59, lightGreyEnd)"
+				1="image(x0-19, y0, x0+3, y0+25, graphics/search/active/left)"
+				2="image(x1-14, y0, x1-2, y0+25, graphics/search/active/right)"
+				3="image_scale(x0+3, y0, x1-14, y0+25, graphics/search/active/inner)"
+
+				//begin pagetab background
+				15="fill(x0-19,y0+31,x0+187,y0+55, darkestGrey)" //middle, top to bottom
+				16="fill(x0-20,y0+32,x0-19,y0+54, darkestGrey)" //left edge
+				17="fill(x0+187,y0+32,x0+188,y0+54, darkestGrey)" //right edge
+				18="fill(x0-19,y0+55,x0+187,y0+56, grey50)" //bottom highlight
+				19="fill(x0-20, y0+54, x0-19, y0+55, grey50)" //bottom left highlight
+				20="fill(x0+187, y0+54, x0+188, y0+55, grey50)" //bottom right highlight
+			}
+		}
+
+		FriendsSearch:empty:active {
+			render {
+				0="fill(x0-27,y0+59,x1+9999,y0+60, darkestGrey)"
+			}
+			render_bg {
+				6="fill(x0-27, y0-5, x1+9999, y0+59, lightGreyEnd)"
+				1="image(x0-19, y0, x0+3, y0+25, graphics/search/active/left)"
+				2="image(x1-14, y0, x1-2, y0+25, graphics/search/active/right)"
+				3="image_scale(x0+3, y0, x1-14, y0+25, graphics/search/active/inner)"
+
+				//begin pagetab background
+				15="fill(x0-19,y0+31,x0+187,y0+55, darkestGrey)" //middle, top to bottom
+				16="fill(x0-20,y0+32,x0-19,y0+54, darkestGrey)" //left edge
+				17="fill(x0+187,y0+32,x0+188,y0+54, darkestGrey)" //right edge
+				18="fill(x0-19,y0+55,x0+187,y0+56, grey50)" //bottom highlight
+				19="fill(x0-20, y0+54, x0-19, y0+55, grey50)" //bottom left highlight
+				20="fill(x0+187, y0+54, x0+188, y0+55, grey50)" //bottom right highlight
+			}
+		}
+
+		FriendsSearch:empty:hover {
+			textcolor="lightGreyEnd"
+			font-style=italic
+			padding-left=4
+		}
+
+		FriendsSearch:disabled {
+			textcolor="None"
+			font-family=basefont
+			font-style=italic
+			padding-left=4
+		}
 
 		// Used as an overlay to round off the buttons
 		FriendsSearchIcon {
@@ -343,14 +356,15 @@
 				// 0="fill(x0, y1-1, x0+1, y1, darkestGrey)"
 			}
 		}
-			FriendsSearchIcon:disabled {
-				bgcolor="none"
-				inset="0 0 0 0"
-				render_bg {
-					//0="fill(x0, y0, x0+1, y0+1, darkestGrey)"
-					//0="fill(x0, y1-1, x0+1, y1, darkestGrey)"
-				}
+
+		FriendsSearchIcon:disabled {
+			bgcolor="none"
+			inset="0 0 0 0"
+			render_bg {
+				//0="fill(x0, y0, x0+1, y0+1, darkestGrey)"
+				//0="fill(x0, y1-1, x0+1, y1, darkestGrey)"
 			}
+		}
 
 		// This will only affect the HEADERS inside it for some reason
 		"CFriendsDialog SectionedListPanelInterior" {
@@ -367,12 +381,14 @@
 			inset="0 -3 0 0"
 			minimum-width=800	// if window is made larger than this, it looks different from if it's smaller
 		}
-			"CFriendsDialog SectionedListPanelInterior:scrollbar" {
-				font-family=semibold
-				font-style="regular,normal"
-				padding-right=15
-			}
+
+		"CFriendsDialog SectionedListPanelInterior:scrollbar" {
+			font-family=semibold
+			font-style="regular,normal"
+			padding-right=15
+		}
 	}
+
  	layout {
 		place [$OSX] {
 			control="frame_title"
@@ -382,6 +398,7 @@
 			width=max
 			height=20
 		}
+
 		place [!$OSX] {
 			control="frame_title"
 			visible=0

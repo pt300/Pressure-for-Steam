@@ -5,17 +5,20 @@
 			align=bottom
 			height=51
 		}
+
 		place {
 			control=label1
 			x=16
 			y=45
 		}
+
 		place {
 			control=LaunchOptions
 			x=16
 			y=75
 			margin-right=16
 		}
+
 		place {
 			control="Button2,Button1"
 			region=bottom

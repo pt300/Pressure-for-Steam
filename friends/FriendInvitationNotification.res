@@ -4,13 +4,11 @@
 			bgcolor=none
 			font-family=basefont
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			font-weight=400
-
 			render {}
 			render_bg {
 				0="fill(x0,y0,x1,y1, darkestGrey)"
-
 				1="gradient(x0+1,y0+1,x1-1,y1-1,grey,lightGreyEnd)"
 
 				// Single pixel corner fills
@@ -27,20 +25,19 @@ font-size=14 [$LINUX]
 
 				// Grey Highlight
 				10="fill(x0+3,y0,x1-3,y0+1, greyHighlight)"
-
 				11="image(x1-110,y0,x1,y1, graphics/notifications/claninvite)"
 			}
 		}
+
 		Notification [!$OSX] {
 			bgcolor=none
 			font-family=basefont
 			font-size=15
-font-size=14 [$LINUX]
+			font-size=14 [$LINUX]
 			font-weight=400
 			render {}
 			render_bg {
 				0="fill(x0,y0,x1,y1, notificationDarkestGrey)"
-
 				1="gradient(x0+1,y0+2,x1-1,y1,notificationGrey,notificationLightGreyEnd)"
 
 				// Single pixel corner fills
@@ -57,7 +54,6 @@ font-size=14 [$LINUX]
 
 				// Single Pixel Highlight
 				10="fill(x0+3,y0+1,x1-3,y0+2, notificationHighlight)"
-
 				11="image(x1-110,y0,x1,y1, graphics/notifications/claninvite)"
 			}
 		}

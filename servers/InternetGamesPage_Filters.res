@@ -18,6 +18,7 @@
 			height=24
 			spacing=8
 		}
+
 		place {
 			control="Filter,FilterString"
 			region="bottom"

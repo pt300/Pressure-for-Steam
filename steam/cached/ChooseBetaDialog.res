@@ -6,6 +6,7 @@
 			width=max
 			height=51
 		}
+
 		place {
 			control="OKButton,CancelButton"
 			region=bottom

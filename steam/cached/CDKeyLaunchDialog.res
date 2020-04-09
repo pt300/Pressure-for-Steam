@@ -3,6 +3,7 @@
 		Button {
 		//	minimum-width=92
 		}
+
 		frame {
 			render_bg {
 				1="fill( x0, y1-51, x1, y1-50, darkGrey )"
@@ -11,12 +12,14 @@
 			}
 		}
 	}
+
 	layout {
 		region {
 			name="bottom"
 			align=bottom
 			height=51
 		}
+
 		place {
 			control="ReasonLabel"
 			x=16
@@ -24,6 +27,7 @@
 			margin-right=16
 			width=max
 		}
+
 		place {
 			control="KeyList"
 			width=max
@@ -45,6 +49,7 @@
 			margin-top=13
 			margin-left=10
 		}
+
 		place {
 			control="CopyButton,CloseButton"
 			region=bottom
@@ -54,6 +59,7 @@
 			margin-right=12
 			margin-top=12
 		}
+
 		place {
 			control="LaunchButton"
 			end-right=CopyButton

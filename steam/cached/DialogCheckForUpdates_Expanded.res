@@ -18,6 +18,7 @@
 			width=max
 			height=51
 		}
+
 		place {
 			control="InfoLabel,InfoLabel2,HTML"
 			y=36
@@ -28,6 +29,7 @@
 			spacing=10
 			margin-bottom=51
 		}
+
 		place {
 			control="RestartNowButton,Button1"
 			region=bottom

@@ -15,6 +15,7 @@
 			width=max
 			height=51
 		}
+
 		place {
 			control=Button1
 			region=bottom

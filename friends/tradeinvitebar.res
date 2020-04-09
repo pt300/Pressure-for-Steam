@@ -8,10 +8,12 @@
 				2="fill(x0-9,y0+1,x1,y0+2, lightestGreen)"
 			}
 		}
+
 		Label {
 			textcolor=black90
 			font-family=semibold
 		}
+
 		Button {
 			textcolor=none
 			bgcolor=none
@@ -19,14 +21,16 @@
 				0="image(x0,y0,x1,y1,graphics/chat_bar_close)"
 			}
 		}
-			Button:hover {
-				textcolor=none
-				bgcolor=none
-				render_bg {
-					0="image(x0,y0,x1,y1,graphics/chat_bar_close_hover)"
-				}
+
+		Button:hover {
+			textcolor=none
+			bgcolor=none
+			render_bg {
+				0="image(x0,y0,x1,y1,graphics/chat_bar_close_hover)"
 			}
+		}
 	}
+
 	layout {
 		place {
 			control="InviteImage,InviteSentImage"
@@ -35,6 +39,7 @@
 			width=27
 			height=36
 		}
+
 		place {
 			control="InviteLabel,ClickHereLabel,InviteSentLabel,WaitingForResponseLabel"
 			margin-left=37
@@ -44,6 +49,7 @@
 			spacing=3
 			width=max
 		}
+
 		place {
 			control="CloseButton"
 			align=right

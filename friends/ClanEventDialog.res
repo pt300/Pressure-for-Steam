@@ -29,7 +29,6 @@
 			dir=down
 		}
 
-
 		region {
 			name=bottom
 			align=bottom
